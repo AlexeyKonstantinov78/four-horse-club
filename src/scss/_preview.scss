@@ -1,0 +1,46 @@
+.preview {
+  position: relative;
+  padding-top: 124px;
+  padding-bottom: 132px;
+  background-image: image-set(url('../img/bg-preview.webp') type('image/webp'),
+      url('../img/bg-preview.avif') type('image/avif'),
+      url('../img/bg-preview.png'));
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+
+
+  &::after {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background-image: image-set(url('../img/bg-preview-osn.webp') type('image/webp'),
+        url('../img/bg-preview-osn.avif') type('image/avif'),
+        url('../img/bg-preview-osn.jpg'));
+    z-index: -1;
+  }
+
+  &__title {
+    max-width: 542px;
+    font-family: "merriweather-v30-cyrillic";
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin-bottom: 23px;
+
+    &-add {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__description {
+    width: 542px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.3;
+    margin-bottom: 40px;
+  }
+}

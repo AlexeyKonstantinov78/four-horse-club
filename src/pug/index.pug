@@ -1,5 +1,5 @@
 doctype html
-html(lang="en")
+html(lang="ru")
   head
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
@@ -8,6 +8,17 @@ html(lang="en")
     link(href="css/index.min.css", rel="stylesheet")
     script(src="js/index.min.js", defer)
   body
-    header.header      
-    main.main 
+    header.header
+      .container.header__container
+        img.header__logo(src="img/logo.svg", alt="Логотип клуба четырех коней")
+    main.main
+      section.preview
+        .container.preview__container
+          h1.preview__title Превратите уездный&nbsp;город<br>
+            span.preview__title-add в&nbsp;столицу земного шара
+          p.preview__description Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам
+          a.btn.btn-def.preview__btn(href="#") Поддержать шахматную мысль
+          a.btn.btn-tran.preview__btn(href="#") Подробнее о турнире
+      section. 
+        p.ticker privet
     footer.footer

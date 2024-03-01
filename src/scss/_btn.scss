@@ -1,0 +1,35 @@
+.btn {
+  display: inline-block;
+  max-width: 263px;
+  padding: 20px 49px;
+  text-align: center;
+  border-radius: 66px;
+  border: 2px solid $bg-btn-default-black;
+  transition: color 0.36s,
+    background-color 0.36s,
+    border-color 0.36s;
+
+  &-def {
+    background-color: $bg-btn-default-black;
+    color: $white;
+    margin-right: 16px;
+
+    &:hover {
+      background-color: $bg-btn-hover;
+      border-color: $bg-btn-hover;
+      color: $color-text;
+      transition: color 0.36s,
+        background-color 0.36s,
+        border-color 0.36s;
+    }
+  }
+
+  &-tran {
+    &:hover {
+      background-color: $bg-btn-default-black;
+      color: $white;
+      transition: color 0.36s,
+        background-color 0.36s;
+    }
+  }
+}
