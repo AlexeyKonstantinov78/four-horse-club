@@ -16,6 +16,7 @@
   }
 
   &__arrow {
+    cursor: pointer;
     color: $color-text;
     transition: color 0.36s;
 
@@ -26,6 +27,7 @@
 
     &[disabled] {
       color: #d6d6d6;
+      cursor: default;
     }
   }
 
