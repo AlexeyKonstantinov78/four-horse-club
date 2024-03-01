@@ -15,22 +15,6 @@
     margin-bottom: 60px;
   }
 
-  &__arrow {
-    cursor: pointer;
-    color: $color-text;
-    transition: color 0.36s;
-
-    &:hover {
-      color: $bg-btn-hover;
-      transition: color 0.36s;
-    }
-
-    &[disabled] {
-      color: #d6d6d6;
-      cursor: default;
-    }
-  }
-
   &__arrows {
     position: absolute;
     top: 0;

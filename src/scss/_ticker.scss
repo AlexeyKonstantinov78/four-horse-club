@@ -16,5 +16,16 @@
     display: flex;
     gap: 12px;
     width: max-content;
+    animation: ticker 16s linear infinite;
+  }
+}
+
+@keyframes ticker {
+  0% {
+    transform: translate(100%, 0);
+  }
+
+  100% {
+    transform: translate(-100%, 0);
   }
 }
