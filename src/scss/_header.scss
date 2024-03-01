@@ -1,0 +1,9 @@
+.header {
+  position: absolute;
+  inset: 0;
+
+  &__container {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
