@@ -27,6 +27,7 @@ body {
   font-weight: 400;
   color: $color-text;
   background-color: $background;
+  counter-reset: stages;
 }
 
 img,

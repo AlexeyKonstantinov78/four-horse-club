@@ -1,0 +1,103 @@
+.stages {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  &__hgroup {
+    position: relative;
+    margin-bottom: 54px;
+    max-width: 806px;
+  }
+
+  &__title {
+    font-family: "merriweather-v30-cyrillic";
+    font-size: 54px;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    position: absolute;
+    bottom: 10px;
+    left: 38%;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #3057a2;
+    display: inline-block;
+    width: 280px;
+  }
+
+  &__items {
+    position: relative;
+    display: grid;
+    grid-template-areas:
+      "stroy open selhos"
+      "strohouse garaj selhos"
+      "radio aero aero";
+    gap: 20px;
+  }
+
+  &__item {
+    position: relative;
+    padding: 20px 20px 20px 70px;
+    background-image: image-set(url('../img/bg-preview-osn.webp') type('image/webp'),
+        url('../img/bg-preview-osn.avif') type('image/avif'),
+        url('../img/bg-preview-osn.jpg'));
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+
+    &::before {
+      counter-increment: stages;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      content: counter(stages);
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 1.2;
+      padding-left: 12px;
+      padding-top: 6px;
+      width: 36px;
+      height: 36px;
+      background-color: $white;
+      border-radius: 50%;
+    }
+
+    &:nth-child(1) {
+      grid-area: stroy;
+    }
+
+    &:nth-child(2) {
+      grid-area: open;
+    }
+
+    &:nth-child(3) {
+      grid-area: selhos;
+    }
+
+    &:nth-child(4) {
+      grid-area: strohouse;
+    }
+
+    &:nth-child(5) {
+      grid-area: garaj;
+    }
+
+    &:nth-child(6) {
+      grid-area: radio;
+    }
+
+    &:nth-child(7) {
+      grid-area: aero;
+      padding-right: 275px;
+    }
+  }
+
+  &__picture {
+    position: absolute;
+    bottom: 170px;
+    right: 90px;
+    width: 376px;
+    height: 140px;
+  }
+}
