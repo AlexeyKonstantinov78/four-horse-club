@@ -1,0 +1,71 @@
+.contributors {
+  padding-top: 100px;
+  padding-bottom: 140px;
+
+  &__container {
+    position: relative;
+  }
+
+  &__title {
+    font-family: "merriweather-v30-cyrillic";
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+  }
+
+  &__arrow {
+    color: $color-text;
+    transition: color 0.36s;
+
+    &:hover {
+      color: $bg-btn-hover;
+      transition: color 0.36s;
+    }
+
+    &[disabled] {
+      color: #d6d6d6;
+    }
+  }
+
+  &__arrows {
+    position: absolute;
+    top: 0;
+    right: 72px;
+    display: flex;
+    gap: 14px;
+    align-items: center;
+  }
+
+  &__items {
+    overflow: hidden;
+    display: flex;
+    gap: 20px;
+  }
+
+  &__item {
+    display: block;
+    min-width: 394px;
+    text-align: center;
+  }
+
+  &__img {
+    margin: 0 auto;
+    margin-bottom: 28px;
+  }
+
+  &__name {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 6px;
+  }
+
+  &__info {
+    font-size: 20px;
+    line-height: 1.2;
+    opacity: 0.6;
+    margin-bottom: 20px;
+  }
+}

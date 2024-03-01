@@ -32,4 +32,22 @@
         background-color 0.36s;
     }
   }
+
+  &__link {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    color: $color-btn-link;
+    border: 1px solid $color-btn-link;
+    border-radius: 62px;
+    padding: 12px;
+    transition: color 0.36s, background-color 0.36s;
+
+    &:hover {
+      color: $white;
+      background-color: $color-btn-link;
+      transition: color 0.36s, background-color 0.36s;
+    }
+  }
 }
