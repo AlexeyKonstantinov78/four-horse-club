@@ -2,6 +2,10 @@
   padding-top: 100px;
   padding-bottom: 100px;
 
+  &__container {
+    position: relative;
+  }
+
   &__hgroup {
     position: relative;
     margin-bottom: 54px;
@@ -27,7 +31,6 @@
   }
 
   &__items {
-    position: relative;
     display: grid;
     grid-template-areas:
       "stroy open selhos"
@@ -95,8 +98,8 @@
 
   &__picture {
     position: absolute;
-    bottom: 170px;
-    right: 90px;
+    bottom: 77px;
+    right: 20px;
     width: 376px;
     height: 140px;
   }
