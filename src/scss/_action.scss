@@ -1,0 +1,31 @@
+.action {
+  padding-top: 80px;
+  padding-bottom: 32px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    flex-basis: 764px;
+    font-family: merriweather-v30-cyrillic;
+    font-size: 36px;
+    line-height: 1.35;
+    text-transform: uppercase;
+    color: #313131;
+
+    &-red {
+      color: $color-text-red;
+    }
+  }
+
+  &__picture {
+    overflow: hidden;
+    display: block;
+    min-width: 335px;
+    width: 394px;
+    border-radius: 65%;
+  }
+}

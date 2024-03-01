@@ -1,0 +1,20 @@
+.ticker {
+  position: relative;
+  font-family: "merriweather-v30-cyrillic";
+  background-color: $color-text-red;
+  color: $white;
+  font-size: 22px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  height: 60px;
+  overflow: hidden;
+
+  &__content {
+    position: absolute;
+    inset: 0;
+    padding: 18px;
+    display: flex;
+    gap: 12px;
+    width: max-content;
+  }
+}
