@@ -1,0 +1,7 @@
+.footer {
+  background-image: image-set(url('../img/bg-preview-osn.webp') type('image/webp'),
+      url('../img/bg-preview-osn.avif') type('image/avif'),
+      url('../img/bg-preview-osn.jpg'));
+  padding-top: 40px;
+  padding-bottom: 72px;
+}
