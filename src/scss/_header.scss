@@ -7,5 +7,20 @@
   &__container {
     padding-top: 26px;
     padding-bottom: 26px;
+
+    @include tablet {
+      padding-top: 18px;
+      padding-bottom: 18px;
+    }
+  }
+
+  &__logo {
+    width: 245px;
+    height: 36px;
+
+    @include tablet {
+      width: 213px;
+      height: 32px;
+    }
   }
 }
