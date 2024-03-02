@@ -2,6 +2,11 @@
   padding-top: 100px;
   padding-bottom: 100px;
 
+  @include tablet {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
   &__container {
     position: relative;
   }
@@ -10,6 +15,10 @@
     position: relative;
     margin-bottom: 54px;
     max-width: 806px;
+
+    @include tablet {
+      margin-bottom: 148px;
+    }
   }
 
   &__title {
@@ -17,6 +26,12 @@
     font-size: 54px;
     line-height: 1.2;
     text-transform: uppercase;
+
+    @include tablet {
+      margin-bottom: 12px;
+      font-size: 36px;
+      margin-bottom: 12px;
+    }
   }
 
   &__description {
@@ -28,6 +43,11 @@
     color: #3057a2;
     display: inline-block;
     width: 280px;
+
+    @include tablet {
+      position: static;
+      font-size: 18px;
+    }
   }
 
   &__items {
@@ -37,6 +57,16 @@
       "strohouse garaj selhos"
       "radio aero aero";
     gap: 20px;
+
+    @include tablet {
+      overflow: hidden;
+      grid-template-areas:
+        "stroy selhos strohouse radio aero"
+        "open selhos garaj radio aero";
+      row-gap: 0;
+      column-gap: 20px;
+      margin-bottom: 28px;
+    }
   }
 
   &__item {
@@ -68,31 +98,60 @@
 
     &:nth-child(1) {
       grid-area: stroy;
+
+      @include tablet {
+        width: 335px;
+      }
     }
 
     &:nth-child(2) {
       grid-area: open;
+
+      @include tablet {
+        width: 335px;
+      }
     }
 
     &:nth-child(3) {
       grid-area: selhos;
+
+      @include tablet {
+        width: 335px;
+      }
     }
 
     &:nth-child(4) {
       grid-area: strohouse;
+
+      @include tablet {
+        width: 335px;
+      }
     }
 
     &:nth-child(5) {
       grid-area: garaj;
+
+      @include tablet {
+        width: 335px;
+      }
     }
 
     &:nth-child(6) {
       grid-area: radio;
+
+      @include tablet {
+        width: 335px;
+      }
     }
 
     &:nth-child(7) {
       grid-area: aero;
       padding-right: 275px;
+
+      @include tablet {
+        width: 335px;
+        padding-right: 20px;
+      }
     }
   }
 
@@ -102,5 +161,45 @@
     right: 20px;
     width: 376px;
     height: 140px;
+
+    @include tablet {
+      width: 335px;
+      height: 182px;
+      top: 136px;
+      left: 20px;
+    }
+  }
+
+  &__arrows {
+    display: none;
+
+    @include tablet {
+      display: flex;
+      width: 178px;
+      margin: 0 auto;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &-circle {
+      &-items {
+        display: flex;
+        align-items: center;
+        align-items: space-between;
+        gap: 6px;
+      }
+
+      &-item {
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        background-color: #d9d9d9;
+
+        &_active {
+          background-color: $color-text;
+        }
+      }
+    }
   }
 }

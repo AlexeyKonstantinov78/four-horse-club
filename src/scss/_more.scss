@@ -24,6 +24,11 @@
 
   &__picture {
     min-width: 474px;
+
+    @include tablet {
+      min-width: unset;
+      width: 335px;
+    }
   }
 
   &__content {
