@@ -2,10 +2,20 @@
   padding-top: 80px;
   padding-bottom: 32px;
 
+  @include laptop {
+    padding-top: 48px;
+    padding-bottom: 12px;
+  }
+
   &__container {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include laptop {
+      display: block;
+    }
   }
 
   &__title {
@@ -15,6 +25,18 @@
     line-height: 1.35;
     text-transform: uppercase;
     color: #313131;
+
+    @include tablet {
+      font-size: 28px;
+      width: 335px;
+    }
+
+    &-float {
+      @include tablet {
+        display: block;
+        padding-top: 261px;
+      }
+    }
 
     &-red {
       color: $color-text-red;
@@ -27,5 +49,16 @@
     min-width: 335px;
     width: 394px;
     border-radius: 65%;
+
+    @include laptop {
+      width: 335px;
+      height: auto;
+    }
+
+    @include tablet {
+      position: absolute;
+      top: 175px;
+      left: 20px;
+    }
   }
 }

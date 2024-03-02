@@ -2,10 +2,24 @@
   padding-top: 32px;
   padding-bottom: 100px;
 
+  @include tablet {
+    padding-top: 12px;
+    padding-bottom: 60px;
+  }
+
   &__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include desktop {
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    @include tablet {
+      width: 100%;
+    }
   }
 
   &__picture {
@@ -14,6 +28,11 @@
 
   &__content {
     flex-basis: 704px;
+
+    @include desktop {
+      flex-basis: content;
+      width: 100%;
+    }
   }
 
   &__title {
@@ -24,6 +43,10 @@
     color: #313131;
     margin-bottom: 60px;
 
+    @include tablet {
+      font-size: 28px;
+    }
+
     &-add {
       color: $color-text-red;
     }
@@ -33,6 +56,10 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 48px;
+
+    @include tablet {
+      margin-bottom: 40px;
+    }
   }
 
   &__item {
@@ -48,12 +75,19 @@
 
     &:last-child>p {
       padding-bottom: 0;
+
+      @include tablet {
+        padding-bottom: 12px;
+      }
     }
 
     &:last-child {
       border-bottom: none;
     }
 
+    @include tablet {
+      flex-direction: column;
+    }
 
     &-title {
       flex-basis: 306px;
@@ -61,6 +95,13 @@
       border-right: 2px solid #d0d0d0;
       padding-bottom: 16px;
       padding-top: 16px;
+
+      @include tablet {
+        border-right: none;
+        flex-basis: auto;
+        padding-bottom: 12px;
+        padding-top: 12px;
+      }
     }
 
     &-text {
@@ -73,6 +114,12 @@
         text-decoration: line-through;
         text-decoration-color: $color-text-red;
       }
+
+      @include tablet {
+        padding-left: 0;
+        padding-bottom: 12px;
+        padding-top: 0px;
+      }
     }
   }
 
@@ -80,5 +127,9 @@
     font-size: 20px;
     line-height: 1.2;
     color: #3057a2;
+
+    @include tablet {
+      font-size: 18px;
+    }
   }
 }
