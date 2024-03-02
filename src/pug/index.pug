@@ -10,19 +10,21 @@ html(lang="ru")
   body
     header.header
       .container.header__container
-        img.header__logo(src="img/logo.svg", alt="Логотип клуба четырех коней")
+        img.header__logo(width="245", height="36", src="img/logo.svg", alt="Логотип клуба четырех коней")
     main.main
       section.preview
         .container.preview__container
           h1.preview__title Превратите уездный&nbsp;город<br>
             span.preview__title-add в&nbsp;столицу земного шара
-          p.preview__description Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам
-          a.btn.btn-def.preview__btn(href="#action") Поддержать шахматную мысль
-          a.btn.btn-tran.preview__btn(href="#more") Подробнее о турнире
+          p.preview__description Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам  
+          div.preview__block-btn        
+            a.btn.btn-def.preview__btn(href="#action") Поддержать шахматную мысль
+            a.btn.btn-tran.preview__btn(href="#more") Подробнее о турнире
       include includes/ticker.pug      
       section.action#action
         .container.action__container
-          h2.action__title Чтобы поддержать Международный васюкинский турнир посетите лекцию на тему: 
+          h2.action__title Чтобы поддержать Международный васюкинский турнир
+            span.action__title-float  посетите лекцию на тему: 
             span.action__title-red «Плодотворная дебютная идея»
           picture.action__picture
             source(srcset="img/many_chees_players.webp", type="image/webp")
@@ -75,22 +77,25 @@ html(lang="ru")
             source(srcset="img/airplane.webp", type="image/webp")
             source(srcset="img/airplane.avif", type="image/avif")
             img.stages__img(width="376", height="140", src="img/airplane.png", alt="Фото самолет этажерка")
-      section.contributors
-        .container.contributors__container
-          h1.contributors__title Участники турнира
-          .contributors__arrows
-            <svg class="btn__arrow contributors__arrows-left" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+          .stages__arrows
+            <svg class="btn__arrow contributors__arrows-left" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" disabled>
             <circle cx="22" cy="22" r="22" transform="rotate(-180 22 22)" fill="currentColor"/>
             <path d="M24.5382 30.4614L16.0767 21.9999L24.5382 13.5384" stroke="white" stroke-width="2" stroke-linecap="square"/>
             </svg>
-            div 
-              span.contributors__contributor 3
-              span /
-              span.contributors__count-contributor 6
+            .stages__arrows-circle
+              ul.stages__arrows-circle-items
+                li.stages__arrows-circle-item.stages__arrows-circle-item_active
+                li.stages__arrows-circle-item
+                li.stages__arrows-circle-item
+                li.stages__arrows-circle-item
+                li.stages__arrows-circle-item                
             <svg class="btn__arrow contributors__arrows-right" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="22" cy="22" r="22" fill="currentColor"/>
             <path d="M19.4618 13.5385L27.9233 22L19.4618 30.4615" stroke="white" stroke-width="2" stroke-linecap="square"/>
             </svg>
+      section.contributors
+        .container.contributors__container
+          h1.contributors__title Участники турнира          
           ul.contributors__items
             li.contributors__item
               img.contributors__img(width="320", height="320", src="img/contributor.png", alt="")
@@ -122,6 +127,19 @@ html(lang="ru")
               h3.contributors__name Остап Бендер
               p.contributors__info Гроссмейстер
               a.btn__link.contributors__link(href="#") Подробнее
+          .contributors__arrows
+            <svg class="btn__arrow contributors__arrows-left" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="22" cy="22" r="22" transform="rotate(-180 22 22)" fill="currentColor"/>
+            <path d="M24.5382 30.4614L16.0767 21.9999L24.5382 13.5384" stroke="white" stroke-width="2" stroke-linecap="square"/>
+            </svg>
+            div 
+              span.contributors__contributor 3
+              span /
+              span.contributors__count-contributor 6
+            <svg class="btn__arrow contributors__arrows-right" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="22" cy="22" r="22" fill="currentColor"/>
+            <path d="M19.4618 13.5385L27.9233 22L19.4618 30.4615" stroke="white" stroke-width="2" stroke-linecap="square"/>
+            </svg>
       include includes/ticker.pug
     footer.footer
       .container.footer__container
