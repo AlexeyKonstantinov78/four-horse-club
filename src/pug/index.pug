@@ -6,7 +6,7 @@ html(lang="ru")
     title Клуб четырех коней
     link(rel="shortcut icon", type="image/png", href="img/favicon.png")
     link(href="css/index.min.css", rel="stylesheet")
-    script(src="js/index.min.js", defer)
+    script(src="js/index.min.js", type="module")
   body
     header.header
       .container.header__container
@@ -95,38 +95,49 @@ html(lang="ru")
             </svg>
       section.contributors
         .container.contributors__container
-          h1.contributors__title Участники турнира          
-          ul.contributors__items
-            li.contributors__item
-              img.contributors__img(width="320", height="320", src="img/contributor.png", alt="")
-              h3.contributors__name Хозе-Рауль Капабланка
-              p.contributors__info Чемпион мира по шахматам
-              a.btn__link.contributors__link(href="#") Подробнее
-            li.contributors__item
-              img.contributors__img(width="320", height="320", src="img/contributor.png", alt="")
-              h3.contributors__name Эммануил Ласкер
-              p.contributors__info Чемпион мира по шахматам
-              a.btn__link.contributors__link(href="#") Подробнее
-            li.contributors__item
-              img.contributors__img(width="320", height="320", src="img/contributor.png", alt="")
-              h3.contributors__name Александр Алехин
-              p.contributors__info Чемпион мира по шахматам
-              a.btn__link.contributors__link(href="#") Подробнее
-            li.contributors__item
-              img.contributors__img(width="320", height="320", src="img/contributor.png", alt="")
-              h3.contributors__name Арон Нимцович
-              p.contributors__info Чемпион мира по шахматам
-              a.btn__link.contributors__link(href="#") Подробнее
-            li.contributors__item
-              img.contributors__img(width="320", height="320", src="img/contributor.png", alt="")
-              h3.contributors__name Рихард Рети
-              p.contributors__info Чемпион мира по шахматам
-              a.btn__link.contributors__link(href="#") Подробнее
-            li.contributors__item
-              img.contributors__img(width="320", height="320", src="img/contributor.png", alt="")
-              h3.contributors__name Остап Бендер
-              p.contributors__info Гроссмейстер
-              a.btn__link.contributors__link(href="#") Подробнее
+          h1.contributors__title Участники турнира   
+          div.contributors__wrapper
+            ul.contributors__items
+              li.contributors__item
+                img.contributors__img(width="320", height="320", src="img/contributor.png", alt="")
+                h3.contributors__name Хозе-Рауль Капабланка
+                p.contributors__info Чемпион мира по шахматам
+                a.btn__link.contributors__link(href="#") Подробнее
+              li.contributors__item
+                img.contributors__img(width="320", height="320", src="img/contributor.png", alt="")
+                h3.contributors__name Эммануил Ласкер
+                p.contributors__info Чемпион мира по шахматам
+                a.btn__link.contributors__link(href="#") Подробнее
+              li.contributors__item
+                img.contributors__img(width="320", height="320", src="img/contributor.png", alt="")
+                h3.contributors__name Александр Алехин
+                p.contributors__info Чемпион мира по шахматам
+                a.btn__link.contributors__link(href="#") Подробнее
+              li.contributors__item
+                img.contributors__img(width="320", height="320", src="img/contributor.png", alt="")
+                h3.contributors__name Арон Нимцович
+                p.contributors__info Чемпион мира по шахматам
+                a.btn__link.contributors__link(href="#") Подробнее
+              li.contributors__item
+                img.contributors__img(width="320", height="320", src="img/contributor.png", alt="")
+                h3.contributors__name Рихард Рети
+                p.contributors__info Чемпион мира по шахматам
+                a.btn__link.contributors__link(href="#") Подробнее
+              li.contributors__item
+                img.contributors__img(width="320", height="320", src="img/contributor.png", alt="")
+                h3.contributors__name Остап Бендер
+                p.contributors__info Гроссмейстер
+                a.btn__link.contributors__link(href="#") Подробнее
+              li.contributors__item
+                img.contributors__img(width="320", height="320", src="img/contributor.png", alt="")
+                h3.contributors__name Хозе-Рауль Капабланка
+                p.contributors__info Чемпион мира по шахматам
+                a.btn__link.contributors__link(href="#") Подробнее
+              li.contributors__item
+                img.contributors__img(width="320", height="320", src="img/contributor.png", alt="")
+                h3.contributors__name Эммануил Ласкер
+                p.contributors__info Чемпион мира по шахматам
+                a.btn__link.contributors__link(href="#") Подробнее
           .contributors__arrows
             <svg class="btn__arrow contributors__arrows-left" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="22" cy="22" r="22" transform="rotate(-180 22 22)" fill="currentColor"/>

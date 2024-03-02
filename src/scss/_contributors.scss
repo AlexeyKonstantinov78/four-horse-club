@@ -39,10 +39,14 @@
     }
   }
 
-  &__items {
+  &__wrapper {
     overflow: hidden;
+  }
+
+  &__items {
     display: flex;
     gap: 20px;
+    transition: transform 0.36s;
 
     @include tablet {
       margin-bottom: 40px;

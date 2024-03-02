@@ -1,2 +1,5 @@
 'use strict';
-console.log('Hello world');
+
+import { sliderContributors } from './slider.js';
+
+sliderContributors();
