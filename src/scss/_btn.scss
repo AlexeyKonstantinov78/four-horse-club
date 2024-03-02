@@ -9,10 +9,18 @@
     background-color 0.36s,
     border-color 0.36s;
 
+  @include tablet {
+    font-size: 16px;
+  }
+
   &-def {
     background-color: $bg-btn-default-black;
     color: $white;
     margin-right: 16px;
+
+    @include desktop {
+      margin-right: 0;
+    }
 
     &:hover {
       background-color: $bg-btn-hover;
@@ -25,6 +33,11 @@
   }
 
   &-tran {
+    @include tablet {
+      background-color: $white;
+      opacity: 0.9;
+    }
+
     &:hover {
       background-color: $bg-btn-default-black;
       color: $white;
