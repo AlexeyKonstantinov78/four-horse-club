@@ -94,4 +94,8 @@ iframe {
   max-width: 1366px;
   padding: 0 72px;
   margin: 0 auto;
+
+  @include tablet {
+    padding: 0 20px;
+  }
 }
