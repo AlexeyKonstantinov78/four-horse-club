@@ -9,6 +9,11 @@
   height: 60px;
   overflow: hidden;
 
+  @include tablet {
+    height: 38px;
+    font-size: 16px;
+  }
+
   &__content {
     position: absolute;
     inset: 0;
@@ -17,6 +22,10 @@
     gap: 12px;
     width: max-content;
     animation: ticker 16s linear infinite;
+
+    @include tablet {
+      padding: 10px;
+    }
   }
 }
 
