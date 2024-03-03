@@ -65,31 +65,32 @@ html(lang="ru")
           hgroup.stages__hgroup
             h2.stages__title Этапы преображения Васюков
             p.stages__description Будущие источники обогащения васюкинцев
-          ul.stages__items
-            li.stages__item Строительство железнодорожной магистрали Москва-Васюки
-            li.stages__item Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов
-            li.stages__item Поднятие сельского хозяйства в радиусе на тысячу километров: производство овощей, фруктов, икры, шоколадных конфет
-            li.stages__item Строительство дворца для турнира
-            li.stages__item Размещение гаражей для гостевого автотранспорта
-            li.stages__item Постройка сверхмощной радиостанции для передачи всему миру сенсационных результатов
-            li.stages__item Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых самолётов и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн
+          div.stages__wrapper
+            ul.stages__items
+              li.stages__item Строительство железнодорожной магистрали Москва-Васюки
+              li.stages__item Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов
+              li.stages__item Поднятие сельского хозяйства в радиусе на тысячу километров: производство овощей, фруктов, икры, шоколадных конфет
+              li.stages__item Строительство дворца для турнира
+              li.stages__item Размещение гаражей для гостевого автотранспорта
+              li.stages__item Постройка сверхмощной радиостанции для передачи всему миру сенсационных результатов
+              li.stages__item Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых самолётов и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн
           picture.stages__picture
             source(srcset="img/airplane.webp", type="image/webp")
             source(srcset="img/airplane.avif", type="image/avif")
             img.stages__img(width="376", height="140", src="img/airplane.png", alt="Фото самолет этажерка")
           .stages__arrows
-            <svg class="btn__arrow contributors__arrows-left" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" disabled>
+            <svg class="btn__arrow stages__arrows-left" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" disabled>
             <circle cx="22" cy="22" r="22" transform="rotate(-180 22 22)" fill="currentColor"/>
             <path d="M24.5382 30.4614L16.0767 21.9999L24.5382 13.5384" stroke="white" stroke-width="2" stroke-linecap="square"/>
             </svg>
             .stages__arrows-circle
               ul.stages__arrows-circle-items
-                li.stages__arrows-circle-item.stages__arrows-circle-item_active
+                li.stages__arrows-circle-item
                 li.stages__arrows-circle-item
                 li.stages__arrows-circle-item
                 li.stages__arrows-circle-item
                 li.stages__arrows-circle-item                
-            <svg class="btn__arrow contributors__arrows-right" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="btn__arrow stages__arrows-right" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="22" cy="22" r="22" fill="currentColor"/>
             <path d="M19.4618 13.5385L27.9233 22L19.4618 30.4615" stroke="white" stroke-width="2" stroke-linecap="square"/>
             </svg>

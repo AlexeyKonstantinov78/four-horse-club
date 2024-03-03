@@ -1,5 +1,7 @@
 'use strict';
 
-import { sliderContributors } from './slider.js';
+import { sliderContributors } from './sliderContributors.js';
+import { sliderStages } from './sliderStages.js';
 
 sliderContributors();
+sliderStages();

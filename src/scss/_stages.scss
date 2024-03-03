@@ -47,6 +47,13 @@
     @include tablet {
       position: static;
       font-size: 18px;
+      width: 100%;
+    }
+  }
+
+  &__wrapper {
+    @include tablet {
+      overflow: hidden;
     }
   }
 
@@ -59,7 +66,6 @@
     gap: 20px;
 
     @include tablet {
-      overflow: hidden;
       grid-template-areas:
         "stroy selhos strohouse radio aero"
         "open selhos garaj radio aero";
@@ -79,10 +85,14 @@
     font-size: 20px;
     line-height: 1.2;
 
+    @include tablet {
+      padding: 62px 20px 34px 72px;
+    }
+
     &::before {
       counter-increment: stages;
       position: absolute;
-      top: 20px;
+
       left: 20px;
       content: counter(stages);
       font-weight: 600;
@@ -101,6 +111,7 @@
 
       @include tablet {
         width: 335px;
+        padding-bottom: 14px;
       }
     }
 
@@ -109,6 +120,8 @@
 
       @include tablet {
         width: 335px;
+        padding-top: 14px;
+        padding-bottom: 34px;
       }
     }
 
@@ -125,6 +138,7 @@
 
       @include tablet {
         width: 335px;
+        padding-bottom: 14px;
       }
     }
 
@@ -133,6 +147,8 @@
 
       @include tablet {
         width: 335px;
+        padding-top: 14px;
+        padding-bottom: 34px;
       }
     }
 
@@ -165,7 +181,7 @@
     @include tablet {
       width: 335px;
       height: 182px;
-      top: 136px;
+      top: 180px;
       left: 20px;
     }
   }
