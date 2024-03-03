@@ -85,7 +85,7 @@ export const html = () =>
         !dev,
         htmlmin({
           removeComments: true,
-          collapseWhitespace: true,
+          //collapseWhitespace: true,
         }),
       ),
     )
@@ -111,7 +111,7 @@ export const pug = () =>
         prettyHtml(),
         htmlmin({
           removeComments: true,
-          collapseWhitespace: true,
+          //collapseWhitespace: true,
         }),
       ),
     )
@@ -129,8 +129,8 @@ export const scss = () =>
       gulpif(
         !dev,
         autoprefixer({
-          cascade: false,
-          grid: false,
+          // cascade: false,
+          // grid: false,
         }),
       ),
     )
@@ -146,11 +146,11 @@ export const scss = () =>
         }),
       ),
     )
-    .pipe(
-      rename({
-        suffix: '.min',
-      }),
-    )
+    // .pipe(
+    //   rename({
+    //     suffix: '.min',
+    //   }),
+    // )
     .pipe(gulpif(dev, sourcemaps.write()))
     .pipe(gulp.dest(path.dist.css))
     .pipe(browserSync.stream());
@@ -186,11 +186,11 @@ export const js = () =>
     .pipe(webpackStream(webpackConf, webpack))
     .pipe(gulpif(!dev, gulp.dest(path.dist.js)))
     .pipe(gulpif(!dev, terser()))
-    .pipe(
-      rename({
-        suffix: '.min',
-      }),
-    )
+    // .pipe(
+    //   rename({
+    //     suffix: '.min',
+    //   }),
+    // )
     .pipe(gulp.dest(path.dist.js))
     .pipe(browserSync.stream());
 
@@ -343,6 +343,6 @@ const develop = (ready) => {
 
 export const base = gulp.parallel(pug, scss, js, img, svg, webp, avif, copy);
 
-export const build = gulp.series(clear, base, critCSS);
+export const build = gulp.series(clear, base);
 
 export default gulp.series(develop, base, server);
